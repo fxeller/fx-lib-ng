@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "fx-lib-ng": [
+        "dist/fx-lib-ng"
+      ],
+      "fx-lib-ng/*": [
+        "dist/fx-lib-ng/*"
+      ]
+    }
   }
 }
