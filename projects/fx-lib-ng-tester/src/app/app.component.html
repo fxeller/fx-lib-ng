@@ -1,4 +1,12 @@
 <mat-toolbar color="primary">
-    <i class="material-icons">widgets</i>
-    <span>FxLibNg-Tester</span>
+    <a mat-button routerLink="landing-page">
+        <i class="material-icons">widgets</i>
+        <span>FxLibNg-Tester</span>
+    </a>
+    <a mat-button routerLink="component-overview">
+        Komponenten
+    </a>
 </mat-toolbar>
+<div class="content-container">
+    <router-outlet></router-outlet>
+</div>
