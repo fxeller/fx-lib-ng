@@ -4,9 +4,11 @@ import { SharedModule } from '../shared/shared.module';
 
 import { ComponentOverviewRoutingModule } from './component-overview-routing.module';
 import { ComponentOverviewComponent } from './component-overview.component';
+import { DemoMatPageNotFoundComponent } from './demo-mat-page-not-found/demo-mat-page-not-found.component';
+import { DemoMatExpansionPanelComponent } from './demo-mat-expansion-panel/demo-mat-expansion-panel.component';
 
 @NgModule({
-  declarations: [ComponentOverviewComponent],
+  declarations: [ComponentOverviewComponent, DemoMatPageNotFoundComponent, DemoMatExpansionPanelComponent],
   imports: [
     CommonModule,
     SharedModule,
