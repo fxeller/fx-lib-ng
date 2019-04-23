@@ -1,0 +1,18 @@
+<fx-mat-expansion-panel class="parameter-panel" caption="Parameter" expanded="false">
+  <p>
+    <mat-form-field>
+      <mat-label>Color</mat-label>
+      <mat-select [formControl]="color">
+        <mat-option value="primary">Primary</mat-option>
+        <mat-option value="accent">Accent</mat-option>
+        <mat-option value="warn">Warn</mat-option>
+        <mat-option value="">Nothing</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </p>
+</fx-mat-expansion-panel>
+<fx-mat-expansion-panel caption="Vorschau" canCollapse="false">
+  <fx-mat-color-panel [color]="color.value">
+    The padding and the border-radius are just for show and not actualy a style of the component. 
+  </fx-mat-color-panel>
+</fx-mat-expansion-panel>

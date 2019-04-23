@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+@import '../_theme-collection.scss';
+
+$primary: mat-palette($mat-purple);
+$accent:  mat-palette($mat-green, A200, A100, A400);
+
+$theme: mat-light-theme($primary, $accent);
+
+@include fx-lib-ng-theme($theme);

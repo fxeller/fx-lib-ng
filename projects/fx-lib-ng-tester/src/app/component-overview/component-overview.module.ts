@@ -6,9 +6,10 @@ import { ComponentOverviewRoutingModule } from './component-overview-routing.mod
 import { ComponentOverviewComponent } from './component-overview.component';
 import { DemoMatPageNotFoundComponent } from './demo-mat-page-not-found/demo-mat-page-not-found.component';
 import { DemoMatExpansionPanelComponent } from './demo-mat-expansion-panel/demo-mat-expansion-panel.component';
+import { DemoMatColorPanelComponent } from './demo-mat-color-panel/demo-mat-color-panel.component';
 
 @NgModule({
-  declarations: [ComponentOverviewComponent, DemoMatPageNotFoundComponent, DemoMatExpansionPanelComponent],
+  declarations: [ComponentOverviewComponent, DemoMatPageNotFoundComponent, DemoMatExpansionPanelComponent, DemoMatColorPanelComponent],
   imports: [
     CommonModule,
     SharedModule,

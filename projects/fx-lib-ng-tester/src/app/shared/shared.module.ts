@@ -8,7 +8,8 @@ import {
   MatListModule, 
   MatFormFieldModule, 
   MatInputModule,
-  MatCheckboxModule 
+  MatCheckboxModule,
+  MatSelectModule 
 } from '@angular/material';
 
 @NgModule({
@@ -23,7 +24,8 @@ import {
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule
   ],
   exports: [
     FxLibNgModule,
@@ -35,7 +37,8 @@ import {
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule
   ]
 })
 export class SharedModule { }

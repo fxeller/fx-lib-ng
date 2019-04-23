@@ -3,12 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { ComponentOverviewComponent } from './component-overview.component';
 import { DemoMatPageNotFoundComponent } from './demo-mat-page-not-found/demo-mat-page-not-found.component';
 import { DemoMatExpansionPanelComponent } from './demo-mat-expansion-panel/demo-mat-expansion-panel.component';
+import { DemoMatColorPanelComponent } from './demo-mat-color-panel/demo-mat-color-panel.component';
 
 const routes: Routes = [
   {
     path: '',
     component: ComponentOverviewComponent,
     children: [
+      {
+        path: 'demo-mat-color-panel',
+        component: DemoMatColorPanelComponent
+      },
       {
         path: 'demo-mat-expansion-panel',
         component: DemoMatExpansionPanelComponent
