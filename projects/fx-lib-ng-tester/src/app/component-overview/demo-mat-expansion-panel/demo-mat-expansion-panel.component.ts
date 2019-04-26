@@ -10,6 +10,7 @@ export class DemoMatExpansionPanelComponent implements OnInit {
   caption = new FormControl('This is the caption.')
   expanded = new FormControl('true');
   canCollapse = new FormControl('true');
+  color = new FormControl('primary');
 
   constructor() { }
 

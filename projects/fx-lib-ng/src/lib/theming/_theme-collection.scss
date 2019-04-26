@@ -1,5 +1,7 @@
 @import '../mat-color-panel/_mat-color-panel.theme.scss';
+@import '../mat-expansion-panel/_mat-expansion-panel.theme.scss';
 
 @mixin fx-lib-ng-theme($theme) {
-    @include mat-color-panel-theme($theme);
+    @include fx-mat-color-panel-theme($theme);
+    @include fx-mat-expansion-panel-theme($theme);
 }

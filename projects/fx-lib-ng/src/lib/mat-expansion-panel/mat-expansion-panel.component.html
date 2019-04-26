@@ -1,11 +1,9 @@
-<div class="mat-elevation-z2">
-  <div class="header-container" (click)="expanded = !expanded">
-    <span class="header-caption">{{caption}}</span>
-    <span class="header-toggle" *ngIf="canCollapse" [@indicatorRotate]="expanded == true ? 'expanded' : 'collapsed'"></span>
-  </div>
-  <div class="content-container" *ngIf="expanded || !canCollapse" @bodyExpansion>
-    <div class="content-area">
-      <ng-content></ng-content>
-    </div>
+<div #headerContainer class="header-container" (click)="expanded = !expanded">
+  <span class="header-caption">{{caption}}</span>
+  <span class="header-toggle" *ngIf="canCollapse" [@indicatorRotate]="expanded == true ? 'expanded' : 'collapsed'"></span>
+</div>
+<div class="content-container" *ngIf="expanded || !canCollapse" @bodyExpansion>
+  <div class="content-area">
+    <ng-content></ng-content>
   </div>
 </div>

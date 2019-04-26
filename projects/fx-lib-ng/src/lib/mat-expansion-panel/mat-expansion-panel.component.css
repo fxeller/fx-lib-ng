@@ -4,15 +4,10 @@
 
 .header-container {
     padding: 10px;
-    background-color: rgba(0,0,0,.06);
     font-size: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.header-container:hover {
-    background-color: rgba(0,0,0,.20);
 }
 
 .header-caption {

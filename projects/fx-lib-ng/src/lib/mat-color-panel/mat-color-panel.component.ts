@@ -13,7 +13,7 @@ export const _MatColorPanelComponentMixinBase: CanColorCtor = mixinColor(MatColo
   styleUrls: ['./mat-color-panel.component.css'],
   inputs: ['color'],
   host: {
-    'class': 'mat-color-panel'
+    'class': 'fx-mat-color-panel'
   }
 })
 export class MatColorPanelComponent extends _MatColorPanelComponentMixinBase implements OnInit, CanColor {

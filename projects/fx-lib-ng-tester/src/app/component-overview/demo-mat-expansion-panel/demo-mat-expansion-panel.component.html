@@ -1,19 +1,30 @@
-<fx-mat-expansion-panel class="parameter-panel" caption="Parameter" expanded="false">
-    <p>
-        <mat-form-field>
-          <mat-label>Caption</mat-label>
-          <input matInput placeholder="Caption" [formControl]="caption">
-        </mat-form-field>
-      </p>
-      <p>
+<fx-mat-expansion-panel class="parameter-panel" caption="Parameter" expanded="false" color="primary">
+  <p>
+    <mat-form-field>
+      <mat-label>Caption</mat-label>
+      <input matInput placeholder="Caption" [formControl]="caption">
+    </mat-form-field>
+  </p>
+  <p>
     <mat-checkbox color="primary" [formControl]="expanded">Expanded</mat-checkbox>
   </p>
   <p>
     <mat-checkbox color="primary" [formControl]="canCollapse">CanCollapse</mat-checkbox>
   </p>
+  <p>
+    <mat-form-field>
+      <mat-label>Color</mat-label>
+      <mat-select [formControl]="color">
+        <mat-option value="primary">Primary</mat-option>
+        <mat-option value="accent">Accent</mat-option>
+        <mat-option value="warn">Warn</mat-option>
+        <mat-option value="">Nothing</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </p>
 </fx-mat-expansion-panel>
-<fx-mat-expansion-panel caption="Vorschau" canCollapse="false">
-  <fx-mat-expansion-panel [caption]="caption.value" [expanded]="expanded.value" [canCollapse]="canCollapse.value">
+<fx-mat-expansion-panel caption="Vorschau" canCollapse="false" color="primary">
+  <fx-mat-expansion-panel [caption]="caption.value" [expanded]="expanded.value" [canCollapse]="canCollapse.value" [color]="color.value">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
     invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
     et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 

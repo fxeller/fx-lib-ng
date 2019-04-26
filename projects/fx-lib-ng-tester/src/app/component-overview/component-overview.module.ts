@@ -9,7 +9,12 @@ import { DemoMatExpansionPanelComponent } from './demo-mat-expansion-panel/demo-
 import { DemoMatColorPanelComponent } from './demo-mat-color-panel/demo-mat-color-panel.component';
 
 @NgModule({
-  declarations: [ComponentOverviewComponent, DemoMatPageNotFoundComponent, DemoMatExpansionPanelComponent, DemoMatColorPanelComponent],
+  declarations: [
+    ComponentOverviewComponent, 
+    DemoMatPageNotFoundComponent, 
+    DemoMatExpansionPanelComponent, 
+    DemoMatColorPanelComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,

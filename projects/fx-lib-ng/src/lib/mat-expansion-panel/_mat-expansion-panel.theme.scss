@@ -1,19 +1,19 @@
 @import '~@angular/material/theming';
 
-@mixin _fx-mat-color-panel-color($palette) {
+@mixin _fx-mat-expansion-panel-color($palette) {
     background: mat-color($palette);
     color: mat-color($palette, default-contrast);
 }
 
-@mixin fx-mat-color-panel-theme($theme) {
+@mixin fx-mat-expansion-panel-theme($theme) {
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);
     $warn: map-get($theme, warn);
     $background: map-get($theme, background);
     $foreground: map-get($theme, foreground);
   
-    .fx-mat-color-panel {
-        background: mat-color($background, app-bar);
+    .fx-mat-expansion-panel > .header-container {
+        background: mat-color($background, status-bar);
         color: mat-color($foreground, text);
     
         &.mat-primary {
@@ -27,5 +27,9 @@
         &.mat-warn {
             @include _mat-toolbar-color($warn);
         }
+    }
+
+    .fx-mat-expansion-panel > .header-container:hover {
+        opacity: 0.80;
     }
 }
